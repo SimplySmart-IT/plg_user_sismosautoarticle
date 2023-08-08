@@ -1,0 +1,8 @@
+{
+	"local": [
+		{
+			"src": "scss",
+			"dest": "../media/css"
+		}
+	]
+}

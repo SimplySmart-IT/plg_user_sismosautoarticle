@@ -1,0 +1,142 @@
+$box-shadow-smooth-color : rgba(151,163,184,.5);
+
+$box-shadow-smooth       : 0px 5px 6px -5px $box-shadow-smooth-color,
+                           0px 15px 12px -15px $box-shadow-smooth-color,
+                           0px 25px 18px -25px $box-shadow-smooth-color;
+
+.control-group.field-sismosinfo {
+	display: block;
+	min-height: 130px;
+	border-top: .5px solid $box-shadow-smooth-color;
+	padding-top: 1em;
+	padding-bottom: .75em;
+	border-bottom: .5px solid $box-shadow-smooth-color;
+
+	.control-label {
+		width: auto;
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		grid-gap: 2rem;
+
+		@media (max-width: 768px) {
+			display: flex;
+    		flex-direction: column;
+			grid-gap: 1.2rem;
+		}
+
+		.sismit-logo {
+			text-align: center;
+			img {
+				height: 90%;
+				width: auto;	
+				
+				@media (max-width: 768px) {
+					min-width: 60%;
+					height: auto;
+				}
+
+				@media (max-width: 576px) {
+					width: 80%;
+				}
+			}
+		}
+	}
+}
+
+.snip1578 {
+	color: rgba(151,163,184,.15);
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	width: 100%;
+	text-align: left;
+	font-size: 1rem;
+	background: #fff;	
+	min-height: 140px;
+	border: .25px solid rgba(151,163,184,.15);
+	box-shadow: $box-shadow-smooth;
+	background: #fff;
+	border-radius: 5px;
+
+	*, &:before, &:after {
+		box-sizing: border-box;
+		transition: all 0.4s ease;
+	}
+
+	img {
+		max-width: 35%;
+		margin-top: -15px;
+		margin-left: 65%;
+		margin-bottom: 15px;
+		backface-visibility: hidden;
+		vertical-align: top;
+		border-radius: 5px;
+		min-width: 30%;
+	  }
+
+	  figcaption {
+		position: absolute;
+		top: 0;
+		right: 40%;
+		left: 0;
+		bottom: 0;
+		padding: 15px;
+	  }
+
+	  p {
+		margin: 0;
+		font-size: 1.05em;
+		font-weight: normal;
+
+		&:first-of-type {			
+			background: #2c516a;
+			color: #f2f2f2;
+			padding: .15em 1.35em .15em .75em;
+    		display: inline-block;
+		}
+
+		&:last-of-type {
+			text-align: right;
+			font-size: .95em;
+			color: #2c516a;
+			padding-top: .75rem;
+		}
+	  }
+
+	  .icons {
+		padding-top: .5em;
+		display: flex;
+    	justify-content: center;
+		a {
+			color: #ccc;
+			padding-right: .5em;
+			text-align: center;
+
+			&[target=_blank]::before {
+				content: '';
+			}
+		}
+
+		a:last-of-type {
+			padding-right: 0;
+		}
+
+		i {
+			font-size: 1.45em;
+		  }
+
+	  }
+
+
+	  &:hover p{
+		&:last-of-type {
+			color: lighten(#28465a, 10%);
+		}		
+
+		&:first-of-type {
+			background: lighten(#28465a, 10%);
+		}
+	  }
+  }
+  

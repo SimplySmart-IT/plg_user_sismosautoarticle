@@ -1,0 +1,20 @@
+{
+	"packages": [
+		{
+			"name": "plg_user_sismosautoarticle",
+			"originalManifestFileName": "sismosautoarticle",
+			"substituteManifestFileName": "sismosautoarticle",
+			"extensions": [
+				{
+					"name": "plg_user_sismosautoarticle",
+					"excludes": [
+						".git",
+						".gitignore",
+						".gitattributes",
+						"README.md"
+					]
+				}
+			]
+		}
+	]
+}

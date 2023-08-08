@@ -1,0 +1,122 @@
+.control-group.field-sismosinfo {
+	display: block;
+	min-height: 130px;
+	border-top: 0.5px solid rgba(151, 163, 184, 0.5);
+	padding-top: 1em;
+	padding-bottom: 0.75em;
+	border-bottom: 0.5px solid rgba(151, 163, 184, 0.5);
+}
+.control-group.field-sismosinfo .control-label {
+	width: auto;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	grid-gap: 2rem;
+}
+@media (max-width: 768px) {
+	.control-group.field-sismosinfo .control-label {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 1.2rem;
+	}
+}
+.control-group.field-sismosinfo .control-label .sismit-logo {
+	text-align: center;
+}
+.control-group.field-sismosinfo .control-label .sismit-logo img {
+	height: 90%;
+	width: auto;
+}
+@media (max-width: 768px) {
+	.control-group.field-sismosinfo .control-label .sismit-logo img {
+		min-width: 60%;
+		height: auto;
+	}
+}
+@media (max-width: 576px) {
+	.control-group.field-sismosinfo .control-label .sismit-logo img {
+		width: 80%;
+	}
+}
+
+.snip1578 {
+	color: rgba(151, 163, 184, 0.15);
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	width: 100%;
+	text-align: left;
+	font-size: 1rem;
+	background: #fff;
+	min-height: 140px;
+	border: 0.25px solid rgba(151, 163, 184, 0.15);
+	box-shadow: 0px 5px 6px -5px rgba(151, 163, 184, 0.5), 0px 15px 12px -15px rgba(151, 163, 184, 0.5), 0px 25px 18px -25px rgba(151, 163, 184, 0.5);
+	background: #fff;
+	border-radius: 5px;
+}
+.snip1578 *, .snip1578:before, .snip1578:after {
+	box-sizing: border-box;
+	transition: all 0.4s ease;
+}
+.snip1578 img {
+	max-width: 35%;
+	margin-top: -15px;
+	margin-left: 65%;
+	margin-bottom: 15px;
+	backface-visibility: hidden;
+	vertical-align: top;
+	border-radius: 5px;
+	min-width: 30%;
+}
+.snip1578 figcaption {
+	position: absolute;
+	top: 0;
+	right: 40%;
+	left: 0;
+	bottom: 0;
+	padding: 15px;
+}
+.snip1578 p {
+	margin: 0;
+	font-size: 1.05em;
+	font-weight: normal;
+}
+.snip1578 p:first-of-type {
+	background: #2c516a;
+	color: #f2f2f2;
+	padding: 0.15em 1.35em 0.15em 0.75em;
+	display: inline-block;
+}
+.snip1578 p:last-of-type {
+	text-align: right;
+	font-size: 0.95em;
+	color: #2c516a;
+	padding-top: 0.75rem;
+}
+.snip1578 .icons {
+	padding-top: 0.5em;
+	display: flex;
+	justify-content: center;
+}
+.snip1578 .icons a {
+	color: #ccc;
+	padding-right: 0.5em;
+	text-align: center;
+}
+.snip1578 .icons a[target=_blank]::before {
+	content: "";
+}
+.snip1578 .icons a:last-of-type {
+	padding-right: 0;
+}
+.snip1578 .icons i {
+	font-size: 1.45em;
+}
+.snip1578:hover p:last-of-type {
+	color: #38617d;
+}
+.snip1578:hover p:first-of-type {
+	background: #38617d;
+}
+
+/*# sourceMappingURL=sismosinfo.css.map */
