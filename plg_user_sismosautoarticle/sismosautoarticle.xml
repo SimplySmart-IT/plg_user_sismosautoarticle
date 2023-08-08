@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>martina@simplysmart-it.de</authorEmail>
 	<authorUrl>https://simplysmart-it.de</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>PLG_USER_SISMOSAUTOARTICLE_XML_DESCRIPTION</description>
 	<namespace path="src">Sismos\Plugin\User\Sismosautoarticle</namespace>
 	<!-- Scripts to run on installation -->
@@ -34,7 +34,6 @@
 					name="title"
 					type="text"
 					label="JGLOBAL_TITLE"
-					required="true"
 					maxlength="255"
 				/>
 				<field
