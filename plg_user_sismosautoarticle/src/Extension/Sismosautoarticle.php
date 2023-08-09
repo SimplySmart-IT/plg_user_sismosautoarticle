@@ -163,7 +163,7 @@ final class Sismosautoarticle extends CMSPlugin implements SubscriberInterface
 		// Get some metadata.
 		$access = (int) $this->app->get('access', 1);
 		// Set values from language strings.
-		$title                = ($t = Text::_($this->params->get('title', ''))) ? $t . ' - ' . $user['name'] : $user['name'];
+		$title                = ($t = trim($this->params->get('title', ''))) ? Text::_($t) . ' - ' . $user['name'] : $user['name'];
 		$alias                = ApplicationHelper::stringURLSafe($user['name']);
 		// Set unicodeslugs if alias is empty
 		if (trim(str_replace('-', '', $alias) == '')) {
