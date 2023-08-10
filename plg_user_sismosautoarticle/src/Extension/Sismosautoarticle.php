@@ -107,6 +107,19 @@ final class Sismosautoarticle extends CMSPlugin implements SubscriberInterface
 			return;
 		}
 
+		$usergroupsFilter = $this->params->get('usergroup', []);
+
+		$check = array_intersect($usergroupsFilter,$user['groups']);
+
+		if (is_array($usergroupsFilter) && !empty($usergroupsFilter)) {
+			foreach($usergroupsFilter as &$group) {
+				$group = (int) $group;
+			}
+			if(empty(array_intersect($usergroupsFilter,$user['groups']))) {
+				return;
+			}
+		}
+
 		if ($user['activation'] || $user['block']) {
 			return;
 		}

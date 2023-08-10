@@ -47,7 +47,7 @@ class PlgUserSismosautoarticleInstallerScript extends InstallerScript
 	 */
 	public function postflight(string $type, InstallerAdapter $adapter)
 	{
-		if ($type != 'install' && $type != 'discover_install') {
+		if ($type == 'uninstall') {
 			return;
 		}
 

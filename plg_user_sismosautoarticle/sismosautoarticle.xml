@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>martina@simplysmart-it.de</authorEmail>
 	<authorUrl>https://simplysmart-it.de</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>PLG_USER_SISMOSAUTOARTICLE_XML_DESCRIPTION</description>
 	<namespace path="src">Sismos\Plugin\User\Sismosautoarticle</namespace>
 	<!-- Scripts to run on installation -->
@@ -30,6 +30,19 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic" addfieldprefix="Sismos\Plugin\User\Sismosautoarticle\Field">
+				<field
+					name="usergroup"
+					type="UserGroupList"
+					label="PLG_USER_SISMOSAUTOARTICLE_FIELD_USERGROUPS_LABEL"
+					description="PLG_USER_SISMOSAUTOARTICLE_FIELD_USERGROUPS_DESC"
+					layout="joomla.form.field.list-fancy-select"
+					checksuperusergroup="0"
+					default=""
+					multiple="true"
+				/>
+				<field type="spacer" name="articlespacer" class="text"
+					label="PLG_USER_SISMOSAUTOARTICLE_FIELD_ARTICLESPACER_LABEL"
+				/>
 				<field
 					name="title"
 					type="text"
@@ -92,6 +105,9 @@
 					useglobal="true"
 					extension="com_content"
 					view="article"
+				/>
+				<field type="spacer" name="logspacer" class="text"
+					label="PLG_USER_SISMOSAUTOARTICLE_FIELD_LOGSPACER_LABEL"
 				/>
 				<field 
 					name="log_on" 
