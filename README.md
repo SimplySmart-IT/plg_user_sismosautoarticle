@@ -45,6 +45,8 @@ In order to be able to use this plugin, you need a Joomla! installation in versi
 
 The plugin is available for download as stable version 1.0.2.
 
+[:link: Download v1.0.2](https://simplysmart-it.de/downloads/sismos-autoarticle/1_0_2)
+
 ### Step 1 - Install and activate the plugin
 
 Installation of the plugin as usual in the installation manager of Joomla.
